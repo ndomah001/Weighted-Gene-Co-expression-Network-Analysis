@@ -15,4 +15,4 @@ I will be performing a WGCNA on RNA-seq data of peripheral blood mononuclear cel
 - Identify what modules (genes or clusters of genes) that are significantly associated with COVID-19 individuals.
 - Identify genes that are significantly associated with *severe* COVID-19 cases.
 
-## 📊 Visualizations
+## 📊 Results
