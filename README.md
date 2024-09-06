@@ -6,7 +6,7 @@ WGCNA is particularly useful for identifying gene modules that are associated wi
 
 A typical workflow looks something like this:
 
-
+![workflow](https://github.com/ndomah001/Weighted-Correlation-Network-Analysis/blob/main/workflow.jpg)
 
 ## 📝 Study Design
 I will be performing a WGCNA on RNA-seq data of peripheral blood mononuclear cells (PBMCs) from a group of 17 COVID-19 subjects and 17 healthy controls ([GSE152418](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE152418)).
