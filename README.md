@@ -15,4 +15,35 @@ I will be performing a WGCNA on RNA-seq data of peripheral blood mononuclear cel
 - Identify what modules (genes or clusters of genes) that are significantly associated with COVID-19 individuals.
 - Identify genes that are significantly associated with *severe* COVID-19 cases.
 
-## 📊 Results
+## 📊 Visualizations
+**Cluster Dendrogram**
+- This dendrogram shows the hierarchical clustering of samples (GSM numbers).
+- It indicates how similar the gene expression profiles are between different samples. Samples that cluster together have more similar overall gene expression patterns.
+- This can help identify potential outliers or groups of samples that behave similarly.
+
+![cd](https://github.com/ndomah001/Weighted-Gene-Co-expression-Network-Analysis/blob/main/1.%20dendrogram.png)
+
+**PCA Plot**
+- This Principal Component Analysis (PCA) plot, shows the first two principal components (PC1 and PC2) that explain the most variance in the data.
+- Each point represents a sample. The spread of points suggests there's variability between samples, but no clear separation between groups is visible.
+- This could indicate subtle differences between COVID-19 and healthy samples, or potential confounding factors.
+
+![pca](https://github.com/ndomah001/Weighted-Gene-Co-expression-Network-Analysis/blob/main/2.%20PCA.png)
+
+**Scale-free Topology Fit & Mean Connectivity**
+
+
+![]()
+
+**Gene Dendrogram and Module Colors**
+
+
+![]()
+
+**Module-Trait Relationships Heatmap**
+
+
+![]()
+
+## 🔬 Observations
+
