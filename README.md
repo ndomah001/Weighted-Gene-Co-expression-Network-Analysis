@@ -34,19 +34,39 @@ I will be performing a WGCNA on RNA-seq data of peripheral blood mononuclear cel
 These plots help choose the soft-thresholding power for network construction:
 - The top plot shows how well the network fits a scale-free topology at different powers.
 - The bottom plot shows how the mean connectivity decreases with increasing power.
+  
 Based on these plots, I will use a power of 18, as it achieves a high scale-free topology fit (R^2 > 0.8) while keeping mean connectivity relatively low.
 
 ![sftf&mc](https://github.com/ndomah001/Weighted-Gene-Co-expression-Network-Analysis/blob/main/3.%20power.png)
 
 ### Gene Dendrogram and Module Colors
+This dendrogram shows the clustering of genes based on their expression patterns. The color bar at the bottom represents different modules:
+- The "unmerged" row shows initial module assignments.
+- The "merged" row shows final modules after similar ones are combined.
+  
+There are several distinct modules (colored blocks) that could represent co-expressed gene networks potentially associated with COVID-19 or disease severity.
 
-
-![]()
+![gd](https://github.com/ndomah001/Weighted-Gene-Co-expression-Network-Analysis/blob/main/4.%20module%20dendrogram.png)
 
 ### Module-Trait Relationships Heatmap
+This heatmap shows correlations between module eigengenes and traits:
+- Rows represent modules (`ME` = Module Eigengene)
+- Columns represent traits (disease state, clinical characteristics)
 
-
-![]()
+![mtrh](https://github.com/ndomah001/Weighted-Gene-Co-expression-Network-Analysis/blob/main/5.%20heatmap.png)
 
 ## 🔬 Observations
+1. Modules significantly associated with COVID-19:
+   - Positively associated: `MEyellow`, `MEpurple`, `MEbrown`, `MEpink`
+   - Negatively associated: `MEgreen`, `MEblue`, `MEturquoise`
+
+2. Modules/genes potentially associated with severe COVID-19:
+   - `MEyellow` and `MEturquoise` show moderate correlations with *severe* cases
+   - `MEgreen` shows a strong association with mild/moderate cases, so genes in this module might be protective against severe disease
+  
+To further my analysis, I should:
+1. Examine the genes within these significant modules, particularly `MEyellow`, `MEturquoise`, and `MEgreen`.
+2. Perform functional enrichment analysis on these modules to understand the biological processes involved.
+3. Identify hub genes within these modules, as they may be key drivers of the COVID-19 response or disease severity.
+
 
