@@ -16,31 +16,34 @@ I will be performing a WGCNA on RNA-seq data of peripheral blood mononuclear cel
 - Identify genes that are significantly associated with *severe* COVID-19 cases.
 
 ## 📊 Visualizations
-**Cluster Dendrogram**
+### Cluster Dendrogram
 - This dendrogram shows the hierarchical clustering of samples (GSM numbers).
 - It indicates how similar the gene expression profiles are between different samples. Samples that cluster together have more similar overall gene expression patterns.
 - This can help identify potential outliers or groups of samples that behave similarly.
 
 ![cd](https://github.com/ndomah001/Weighted-Gene-Co-expression-Network-Analysis/blob/main/1.%20dendrogram.png)
 
-**PCA Plot**
+### PCA Plot
 - This Principal Component Analysis (PCA) plot, shows the first two principal components (PC1 and PC2) that explain the most variance in the data.
 - Each point represents a sample. The spread of points suggests there's variability between samples, but no clear separation between groups is visible.
 - This could indicate subtle differences between COVID-19 and healthy samples, or potential confounding factors.
 
 ![pca](https://github.com/ndomah001/Weighted-Gene-Co-expression-Network-Analysis/blob/main/2.%20PCA.png)
 
-**Scale-free Topology Fit & Mean Connectivity**
+### Scale-free Topology Fit & Mean Connectivity
+These plots help choose the soft-thresholding power for network construction:
+- The top plot shows how well the network fits a scale-free topology at different powers.
+- The bottom plot shows how the mean connectivity decreases with increasing power.
+Based on these plots, I will use a power of 18, as it achieves a high scale-free topology fit (R^2 > 0.8) while keeping mean connectivity relatively low.
+
+![sftf&mc](https://github.com/ndomah001/Weighted-Gene-Co-expression-Network-Analysis/blob/main/3.%20power.png)
+
+### Gene Dendrogram and Module Colors
 
 
 ![]()
 
-**Gene Dendrogram and Module Colors**
-
-
-![]()
-
-**Module-Trait Relationships Heatmap**
+### Module-Trait Relationships Heatmap
 
 
 ![]()
